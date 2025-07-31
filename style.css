@@ -1,0 +1,13 @@
+/* Optionnel - styling simple */
+.link.add-frais-link {
+  font-size: 20px;
+  padding-right: 15px;
+}
+li.selected {
+  background-color: grey; /* ou toute autre couleur douce */
+}
+.select-icon {
+  color: #007aff;
+  min-width: 20px;
+  text-align: center;
+}

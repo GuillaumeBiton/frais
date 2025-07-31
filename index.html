@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Frais App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  
+  <!-- Framework7 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@8/framework7-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="view view-main view-init">
+      <div class="page" data-name="home">
+        
+        <!-- Top Navbar -->
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <div class="title">Liste des Frais</div>
+                <div class="right">
+                <a href="#" class="link add-frais-link">➕</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrollable page content -->
+        <div class="page-content">
+          <div class="list list-strong inset list-dividers-ios">
+            <ul id="frais-list">
+              <!-- Frais injectés ici -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+   <div class="popup popup-push" id="popup-ajout-frais">
+  <div class="view">
+    <div class="page">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="title">Ajouter un frais</div>
+          <div class="right">
+            <a class="link popup-close">Fermer</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Description</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="input-description" placeholder="Ex : Restaurant" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Montant (€)</div>
+                <div class="item-input-wrap">
+                  <input type="number" id="input-montant" placeholder="Ex : 24.50" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+  <div class="item-inner">
+    <div class="item-title item-label">Date</div>
+    <div class="item-input-wrap">
+      <input type="text" id="input-date" placeholder="JJ/MM/AAAA" readonly />
+    </div>
+  </div>
+</li>
+          </ul>
+        </div>
+        <div class="block">
+          <a href="#" class="button button-fill" id="btn-valider-frais">Valider</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Framework7 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/framework7@8/framework7-bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
